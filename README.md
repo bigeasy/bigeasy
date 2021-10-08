@@ -33,9 +33,10 @@ build applications. It provides an interface for onboarding new instances. You
 can use [Conference](https://github.com/bigeasy/conference) to implement a
 map/reduce, which ends up being a useful concept in consensus applications,
 allowing you to take actions based on whether or not all participants have been
-notified. [Addendum](https://github.com/bigeasy/addendum) is a proof-of-concept
-application that implements the `etcd` interface in Node.js using Paxos instead
-of Raft.
+notified. Currently sketching out
+[Addendum](https://github.com/bigeasy/addendum) as a proof-of-concept for this
+consensus work that implements the `etcd` interface in Node.js using Paxos
+instead of Raft.
 
 A packet parsing module.
 
