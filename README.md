@@ -8,7 +8,7 @@ write to either a directory tree or a write-ahead log. The write-ahead log is
 itself useful and you can find it in
 [WriteAhead](https://github.com/bigeasy/writeahead).
 
-[Memento](https://github.com/bigeasy/status) is a practical application of
+[Memento](https://github.com/bigeasy/memento) is a practical application of
 Strata. It is a pure-JavaScript noSQL relational database for Node.js. It is
 [ACID](https://en.wikipedia.org/wiki/ACID). It is atomic with all or nothing
 transactions, isolated in that changes made during a transaction are only
@@ -17,7 +17,7 @@ and committed writes will survive a system crash. It is based a multi-version
 concurrency control model and I've a collection of libraries to build MVCC
 databases off of Strata.
 
-[IndexedDB](https://github.com/bigeasy/status) is a pure-JavaScript
+[IndexedDB](https://github.com/bigeasy/indexeddb) is a pure-JavaScript
 implementation of IndexedDB for Node.js. It is build on top of Memento and is
 primarily a proof of concept and is used to leverage the Web Platform Test suite
 for IndexedDB to get a through testing of Memento.
