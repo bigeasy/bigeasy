@@ -47,7 +47,7 @@ any parser or serializer you would write by hand.
 
 Logging modules.
 
-[Prolific](https://github.com/bigeasy/proflific) is yet another logging library,
+[Prolific](https://github.com/bigeasy/prolific) is yet another logging library,
 but one that is both performant due to asynchronous message processing during
 normal operation, and durable due to synchronous message processing upon
 uncaught exception. Unlike other logging libraries Prolific will not lose your
@@ -74,8 +74,8 @@ queue of spawning an arbitrary number of `async` function calls.
 concurrency library with the ability to enqueue work in the work queue from the
 work queue in a way that will avoid deadlock.
 
-[Avenue](https://github.com/bigeasy/turnstile) is a module that implements what
-are essentially Go channels that can be processed synchronously or
-asynchronously (or ignored completely at without leaking memory.) The
+[Avenue](https://github.com/bigeasy/avenue) is a module that implements what are
+essentially Go channels, channels that can be processed synchronously or
+asynchronously by zero, one or more consumers (i.e. multiplexed.) The
 consumption decisions are deferred so that the producer does not have to concern
 itself with the concurrency considerations of the consumer.
