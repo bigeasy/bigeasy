@@ -1,5 +1,25 @@
 Writing software in C, shell, Node.js and Go. Managing infrastructure with
-Kubernetes, Consul/Vault, Terraform and Pulumi.
+Kubernetes, ELK, Kafka, Consul/Vault, Terraform and Pulumi. Formerly
+[Wink](https://wink.com) currently available for contract.
+
+## Overview
+
+My most popular project is [Timezone](https://github.com/bigeasy/timezone). A
+IANA DB timzone library for Node.js or the browser that does timezone aware date
+math and localized time formatting.
+
+Currently working on documentation for these featured projects. They are the
+most interesting projects in this account.
+
+The projects in this account come together to create four primary projects.
+[Memento](https://github.com/bigeasy/memento) a pure-JavaScript relational
+database, [Compassion](https://github.com/bigeasy/compassion) a Paxos-based
+atomic log, [Packet](https://github.com/bigeasy/packet) a binary packet parser
+and serializer generator and [Prolific](https://github.com/bigeasy/prolific) a
+logging system for Node.js applications that won't lose messages.
+
+As of October 2021 my primary focus is on documentation of all this work. Please
+be patient as I work though the `README.md`s.
 
 ## Database
 
@@ -27,29 +47,30 @@ for IndexedDB to get a through testing of Memento.
 
 [Compassion](https://github.com/bigeasy/compassion) is an atomic log based on a
 [Paxos](https://github.com/bigeasy/paxos). People are drawn to the Paxos
-implementation via NPM but all that repo it is core Paxos algorithm. If you want
-to use that Paxos you should instead use Compassion. Compassion provides the
-network communication and implements an `async`/`await` interface you can use to
-build applications. It provides an interface for onboarding new instances. You
-can use [Conference](https://github.com/bigeasy/conference) to implement a
-map/reduce, which ends up being a useful concept in consensus applications,
-allowing you to take actions based on whether or not all participants have been
-notified. Currently sketching out
-[Addendum](https://github.com/bigeasy/addendum) as a proof-of-concept for this
-consensus work that implements the `etcd` interface in Node.js using Paxos
-instead of Raft.
+implementation via NPM but repo it is the core Paxos algorithm without
+networking components. If you want to use that Paxos implementation you should
+instead use Compassion. Compassion provides the service discovery and network
+communication. It implements an `async`/`await` interface you can use to build
+applications. You can use [Conference](https://github.com/bigeasy/conference) to
+implement a map/reduce, which ends up being a useful concept in consensus
+applications, allowing you to take actions based on whether or not all
+participants have been notified. Currently sketching out
+[Addendum](https://github.com/bigeasy/addendum) as a proof-of-concept for
+Compassion that implements the `etcd` v2 API in Node.js using Paxos instead of
+Raft.
 
 ## Packet Parsing
 
 [Packet](https://github.com/bigeasy/packet) is a binary parser generator for
 Node.js that generates pure-JavaScript whole or _incremental_  parsers and
-serializers from a syntax-bashed JavaScript. These ought to be as performant as
-any parser or serializer you would write by hand.
+serializers from a syntax-bashed JavaScript definition language. These generated
+parsers and serializers ought to be as performant as any parser or serializer
+you would write by hand.
 
 ## Logging
 
-[Prolific](https://github.com/bigeasy/prolific) is yet another logging library,
-but one that is both performant due to asynchronous message processing during
+[Prolific](https://github.com/bigeasy/prolific) is more than yet another logging
+library. It is both performant due to asynchronous message processing during
 normal operation, and durable due to synchronous message processing upon
 uncaught exception. Unlike other logging libraries Prolific will not lose your
 parting stack trace. The final messages will be captured and redirected to the
