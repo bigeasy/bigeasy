@@ -1,6 +1,6 @@
 Writing software in C, shell, Node.js and Go. Managing infrastructure with
 Kubernetes, ELK, Kafka, Consul/Vault, Terraform and Pulumi. Formerly
-[Wink](https://wink.com) currently available for contract.
+[Wink](https://wink.com), currently available for contract.
 
 ## Overview
 
