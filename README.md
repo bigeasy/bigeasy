@@ -1,6 +1,7 @@
-Welcome to my GitHub repository.
+Writing software in C, shell, Node.js and Go. Managing infrastructure with
+Kubernetes, Consul/Vault, Terraform and Pulumi.
 
-Database modules.
+## Database
 
 [Strata](https://github.com/bigeasy/strata) gets a lot of attention because it
 is a pure-JavaScript b-tree for Node.js. A proper file-backed b-tree that can
@@ -22,7 +23,7 @@ implementation of IndexedDB for Node.js. It is build on top of Memento and is
 primarily a proof of concept and is used to leverage the Web Platform Test suite
 for IndexedDB to get a through testing of Memento.
 
-Consensus modules.
+## Consensus
 
 [Compassion](https://github.com/bigeasy/compassion) is an atomic log based on a
 [Paxos](https://github.com/bigeasy/paxos). People are drawn to the Paxos
@@ -38,14 +39,14 @@ notified. Currently sketching out
 consensus work that implements the `etcd` interface in Node.js using Paxos
 instead of Raft.
 
-A packet parsing module.
+## Packet Parsing
 
 [Packet](https://github.com/bigeasy/packet) is a binary parser generator for
 Node.js that generates pure-JavaScript whole or _incremental_  parsers and
 serializers from a syntax-bashed JavaScript. These ought to be as performant as
 any parser or serializer you would write by hand.
 
-Logging modules.
+## Logging
 
 [Prolific](https://github.com/bigeasy/prolific) is yet another logging library,
 but one that is both performant due to asynchronous message processing during
@@ -54,7 +55,7 @@ uncaught exception. Unlike other logging libraries Prolific will not lose your
 parting stack trace. The final messages will be captured and redirected to the
 same logging stream as your runtime messages. This is kind of a big deal.
 
-Structured concurrency.
+## Structured Concurrency
 
 [Destructible](https://github.com/bigeasy/destructible) is a structured
 concurrency library I created before I learned about [structured
